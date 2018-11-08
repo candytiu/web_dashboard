@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="css/text" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!--navgation bar code to apply on every page-->  
+    <nav class="navbar navbar-inverse"> 
+        <div class="container-fluid">
+          <div class="navbar-header">
+          <a class="navbar-brand" href="landing_page.html">Latitude</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="temperature.html">Max Temperature</a></li>
+                <li><a href="humidity.html">Humidity</a></li>
+                <li><a href="cloudiness.html">Cloudiness</a></li>
+                <li><a href="wind.html">Wind Speed</a></li>
+              </ul>
+            </li>
+            <li><a href="comparison.html">Comparison</a></li>
+            <li><a href="data.html">Data</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-7">
+            <h1 class="page-header">Latitude vs. Humidity</h1>
+              <!-- <div class="box">  -->
+                <img src="./Resources/images/Latitude _Humidity.png" title="Latitude vs Humidity" height=350px width=600px>
+                <p class="text"> Although this humidity graph seems to confirm our suspicion that there was a selection bias towards coastal locations,
+                    it does not appear to point towards any meaningful relationship between humidity and latitude.</p>
+              <!-- </div> -->
+            </div>
+            <div class="col-sm-12 col-md-5">
+                <h1>Visualizations</h1>
+                <a href="temperature.html">
+                    <img src="./Resources/images/Lattitude_Temperature.png" title="Latitude vs Temperature" height=200px width=200px>
+                </a>
+                <a href="cloudiness.html">
+                    <img src="./Resources/images/Latitude_Cloudiness.png" title="Latitude vs Cloudiness" height=200px width=200px>
+                </a>
+                <a href="humidity.html">
+                    <img src="./Resources/images/Latitude _Humidity.png" title="Latitude vs Humidity" height=200px width=200px>
+                </a>
+                <a href="wind.html">
+                    <img src="./Resources/images/Latitude_Wind.png" title="Latitude vs Wind Speed" height=200px width=200px>
+                </a>
+            </div>
+        </div>
+    </div>
